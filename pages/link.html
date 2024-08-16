@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Belajar Menggunakan Link</title>
+</head>
+
+<body>
+    <h1>Belajar Menggunakan <em>Link</em></h1>
+    <p>Menggunakan Link, kita dapat berpindah dengan cara meng-klik link atau tautan tersebut. Link tidak selalu dalam
+        bentuk teks, bisa juga dari gambar.</p>
+
+    <h2>Daftar Tag Link</h2>
+    <ol type="A">
+        <li>Tag <code>&lt;a&gt;</code></li>
+        <ol type="a">
+            <li>Isi konten tag ini adalah isi dari tampilan link, bisa berupa teks atau lainnya.</li>
+            <li>Tag ini memiliki atribut <code>href</code>, yang berisi lokasi tujuan dari link tersebut.</li>
+            <li>Tag <code>&lt;a&gt;</code> juga memiliki atribut <code>target</code>, yang digunakan sebagai target
+                jendela Web Browser. Kita bisa
+                menggunakan nilai seperti di bawah ini:</li>
+            <ol>
+                <li><code>target="_self"</code>, artinya halaman akan ditampilkan di halaman yang sama. Ini adalah
+                    bawaan default.</li>
+                <li><code>target="_blank"</code>, artinya halaman ini akan ditampilkan di jendela baru di Browser.</li>
+            </ol>
+            <li>Tag <code>&lt;a&gt;</code> juga memiliki atribut <code>title</code>, untuk menuliskan judul yang muncul
+                ketika mouse berada di atas link tersebut.</li>
+        </ol>
+    </ol>
+
+    <p>Berikut adalah contoh link menggunakan tag <code>&lt;a&gt;</code>:</p>
+    <ul>
+        <li><a href="https://www.example.com" title="Klik untuk mengunjungi Example">Contoh Link ke Example.com</a></li>
+        <li><a href="https://www.example.com" target="_blank" title="Klik untuk membuka di tab baru">Buka Example.com di
+                Tab Baru</a></li>
+        <li><a href="../index.html" target="_self" title="Kembali ke halaman utama">Kembali ke Halaman Utama</a></li>
+    </ul>
+
+    <h2>Absolute Link dan Relative Link</h2>
+    <p>Dalam pembuatan link, kita dapat menggunakan dua jenis tautan:</p>
+    <ol type="1">
+        <li><strong>Absolute Link</strong></li>
+        <p>Absolute link adalah tautan yang mencakup URL lengkap, termasuk protokol (seperti <code>http</code> atau
+            <code>https</code>), nama domain, dan jalur ke file. Link ini akan selalu mengarah ke lokasi yang sama di
+            internet, terlepas dari halaman tempat link tersebut diletakkan.</p>
+        <p>Contoh absolute link:</p>
+        <ul>
+            <li><a href="https://www.example.com/about-us.html"
+                    title="Klik untuk mengunjungi halaman About Us">Example.com - About Us</a></li>
+        </ul>
+
+        <li><strong>Relative Link</strong></li>
+        <p>Relative link adalah tautan yang hanya mencakup jalur relatif terhadap lokasi file saat ini. Link ini
+            biasanya digunakan untuk menghubungkan halaman-halaman di dalam situs yang sama. Relative link bergantung
+            pada struktur direktori situs dan lokasi file saat ini.</p>
+        <p>Contoh relative link:</p>
+        <ul>
+            <li><a href="hello-world.html" title="Klik untuk mengunjungi halaman About Us">Hello World Page (relative
+                    link di
+                    folder yang sama)</a></li>
+            <li><a href="../index.html" title="Klik untuk mengunjungi halaman Contact">Home (relative link di
+                    folder yang berbeda)</a></li>
+        </ul>
+    </ol>
+
+    <a href="../index.html">Back</a>
+</body>
+
+</html>
